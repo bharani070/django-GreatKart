@@ -1,0 +1,185 @@
+/* Hide Radio button */
+.rate > input{
+  display: none;
+}
+
+.rate{
+  display: inline-block;;
+  border: 0;
+}
+
+.rate > label{
+  float: right;
+}
+
+/* Showing the stars */
+.rate > label:before{
+  display: inline-block;
+  font-size: 1.1rem;
+  font-family: FontAwesome;
+  content: "\f005";
+  margin:0;
+  padding:0.3rem .2rem;
+  cursor: pointer;
+}
+
+/* Half star */
+.rate .half:before{
+  content: "\f089";
+  position: absolute;
+  padding-right: 0;
+}
+
+/* Click and hover */
+input:checked ~ label, label:hover ~ label{
+  color: #ffb503;
+}
+
+/* hover hightlight */
+input:checked + label:hover, input:checked ~ label:hover,input:checked ~ label:hover ~ label,
+label:hover ~ input:checked ~ label{
+  color: #cc9000;
+}
+
+.rating-star i{
+  color: #ffb503 !important;
+}
+
+ul.thumb{
+  margin:0 auto;
+  padding: 0;
+  float: left;
+}
+ul.thumb li{
+  list-style: none;
+  margin: 10px;
+}
+ul.thumb li img{
+  width: 80px;
+  height: 80px;
+  border: 1px solid grey;
+}
+
+
+@media only screen and (max-width: 480px) {
+  img.logo {
+    padding-top: 5px;
+  }
+
+  .category-wrap.main-dropdown.d-inline-block.float-right {
+    padding: 10px;
+    position: relative;
+    width: 90%;
+  }
+
+  a.brand-wrap.main-logo{
+    margin-bottom: 0px !important;
+  }
+
+  a.btn.btn-outline-primary.store-btn {
+    margin-left: 14px;
+    margin-top: -1px;
+  }
+
+  .col-lg.col-md-6.col-sm-12.col.search {
+    margin-bottom: 15px;
+    padding-left: 40px;
+    margin-top: 0px;
+    padding-top: 30px;
+    float: right;
+  }
+
+  .d-flex.mb-3.mb-lg-0.signin-links {
+    margin-left: 5px;
+    float: left;
+  }
+
+  .col-lg-3.col-sm-6.col-8.order-2.order-lg-3.links-div {
+    margin-left: 73px;
+    padding-right: 6px !important;
+    margin-top: -15px !important;
+  }
+  .mb-3.mb-lg-0.signin-links {
+    margin-left: -66px;
+    margin-bottom: -5px !important;
+  }
+
+  a.widget-header.pl-3.ml-3.cart-icon {
+    margin-left: 119px !important;
+  }
+
+  .card.mx-auto.sign-box {
+    margin-top: -26px !important;
+    margin-bottom: -10px !important;
+  }
+
+  footer.section-footer.border-top.footer-box {
+    margin-top: auto !important;
+  }
+
+  section.section-name.padding-y-sm.galarry-box {
+    margin-top: -39px !important;
+  }
+
+  section.section-content.padding-y.register-box {
+    margin: 3px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+
+  section.section-pagetop.bg.our_store {
+    padding: 6px !important;
+  }
+
+  section.section-content.padding-y.store {
+    margin-top: -30px !important;
+  }
+
+  td.product-pad {
+    padding: 0px !important;
+    padding-left: 14px !important;
+  }
+
+  td.quantity-pad {
+    padding: 0px !important;
+    padding-left: 2px !important;
+  }
+
+  td.price-pad {
+    padding: 0px !important;
+  }
+
+  td.text-right.pad {
+    padding: 0px !important;
+  }
+
+  .card-body.no-pad {
+    overflow-y: scroll;
+ }
+
+ .container.overfl {
+  overflow-y: scroll;
+  width: 95% !important;
+  margin-left: 9px !important;
+  padding-left: 2px !important;
+  margin-right: 0px !important;
+  padding-right: 2px !important;
+  }
+
+  .col-md-2.foot-1 {
+    margin-bottom: 11px !important;
+    text-align: center;
+  }
+
+  .col-md-8.text-md-center.foot-2{
+    text-align: center;
+  }
+
+  .px-2.foot-3{
+    display: block;
+  }
+
+  .col-md-2.text-md-right.text-muted.foot-4{
+    text-align: center;
+  }
+}
