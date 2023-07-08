@@ -12,11 +12,11 @@ class Command(BaseCommand):
             if password is None:
                 raise ValueError("Password not found")
             User.objects.create_superuser(
-                first_name='bharani'
-                last_name='kumar'
+                first_name='bharani',
+                last_name='kumar',
                 username="bharani09",
                 email="bharanikumar070@gmail.com", 
-                password=bharani070,
+                password='bharani070',
             )
             print("Superuser has been created.")
         else:
