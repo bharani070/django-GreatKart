@@ -22,10 +22,10 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = 'pd-sfop0lhy99)_&2c&+^5z4q_8n5augd2omw)0#k2!l-r7sab'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', default=True, cast=bool) # True
+DEBUG = False # True
 
 # ALLOWED_HOSTS = ['django-greatkart-env.eba-migmg8jy.ap-south-1.elasticbeanstalk.com']
 
@@ -178,9 +178,9 @@ MESSAGE_TAGS = {
 
 
 # SMTP configuration
-EMAIL_HOST = config('EMAIL_HOST')
-EMAIL_PORT = config('EMAIL_PORT', cast=int)
-EMAIL_HOST_USER = config('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
-EMAIL_USE_TLS = config('EMAIL_USE_TLS', cast=bool)
-DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL')
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'bharanikumar070@gmail.com'
+EMAIL_HOST_PASSWORD = 'ntxdtkinqdyoifar'
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'GreatKart <bharanikumar070@gmail.com>'
